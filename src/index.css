@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  margin-left: 20px;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+}
+
+.body {
+  font-family: 'font-sans';
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.promo {
+  background: url(../public/images/road_background.jpg) center no-repeat;
+  background-size: cover;
+  height: 110vh;
+}
+
+.promo-inner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-inner {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.graph-block {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  margin: 0 auto;
+}
+
+.graph-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.target {
+  color: white;
+}
+
+.target-inner {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 100px;
+  padding: 80px;
+}
+
+.target-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.target-inner img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.section {
+  width: 100%;
+}
+
+.section-inner {
+  padding: 150px;
+}
+
+.form-wrapper {
+  padding: 35px;
+  width: 510px;
+}
+
+.input {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border: 1px solid #9AABAA;
+  border-radius: 8px;
+  transition: all .3s;
+}
+
+.input:hover {
+  box-shadow: 0px 0px 0px 3px rgba(34, 60, 80, 0.1);
+}
+
+.input:focus {
+  box-shadow: 0px 0px 0px 2px rgb(4, 152, 236);
+  border-color: rgb(4, 152, 236);
+  outline: none;
+}
+
+.button {
+  padding: 4px 22px;
+  color: #9AABAA;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #9AABAA;
+  border-radius: 4px;
+  background-color: #E7EDEC;
+  transition: all transform 0.2s;
+}
+
+.button_active {
+  color: white;
+  background-color:  #1a73e9;
+  border-color:  #1a73e9;
+  transition: all 0.2s;
+}
+
+.map {
+  display: flex;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.map-navbar {
+  padding: 10px;
+  width: 400px;
+}
+
+.map-circle {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.nav-btn {
+  width: 100%;
+  padding: 5px 12px;
+}
+
+.nav-btn:hover {
+  background: #e0e0e0;
+}
+
+.navbar-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+}
+
+.intro {
+  background-image: url("../public/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px
+}
+
+.traffic {
+  background: url(../public/images/traffic_light.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.traffic-inner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.traffic-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.traffic-box {
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #223D4D;
+}
+
+@media (max-width: 1024px) {
+  .form-wrapper {
+    width: 100%;
+  }
+
+  .access {
+    flex-direction: column;
+  }
+
+  .promo {
+    background-position: top;
+    height: 200px;
+  }
+
+  .login .form  {
+    order: 1;
+  }
+}
